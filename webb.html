@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Survey</title>
+    <style>
+        /* Set a linear gradient background with two colors */
+        body {
+            background: linear-gradient(to right, lightblue, lightgreen);
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .radio-group {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .yes {
+            color: green;
+            font-weight: bold;
+        }
+
+        .no {
+            color: red;
+            font-weight: bold;
+        }
+
+        .no-need {
+            color: orange;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <center><h1><br>INVESTIGATION</h1></center>
+    <table>
+		<tr>
+				<td align=left><h2>Enter the INV No:</h2></td>
+				<td align=left><input type=text name=+1 size=15></td>
+		</tr>
+        <tr>
+            <th>Items</th>
+            <th> Yes / No / No-Need</th>
+        </tr>
+        <tr>
+            <td>FIR</td>
+            <td class="radio-group">
+                <input type="radio" id="FIR-yes" name="FIR">
+                <label Option 1="FIR-yes" class="yes"></label>
+                <input type="radio" id="FIR-no" name="FIR">
+                <label for="FIR-no" class="no"></label>
+                <input type="radio" id="FIR-no-need" name="FIR">
+                <label for="FIR-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Charge Sheet</td>
+            <td class="radio-group">
+                <input type="radio" id="cs-yes" name="credit-sheet">
+                <label for="cs-yes" class="yes"></label>
+                <input type="radio" id="cs-no" name="credit-sheet">
+                <label for="cs-no" class="no"></label>
+                <input type="radio" id="cs-no-need" name="credit-sheet">
+                <label for="cs-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Accused Page</td>
+            <td class="radio-group">
+                <input type="radio" id="accused-yes" name="acc">
+                <label for="car-yes" class="yes"></label>
+                <input type="radio" id="accused-no" name="acc">
+                <label for="accused-no" class="no"></label>
+                <input type="radio" id="accused-no-need" name="acc">
+                <label for="accused-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Breaf</td>
+            <td class="radio-group">
+                <input type="radio" id="married-yes" name="married">
+                <label for="married-yes" class="yes"></label>
+                <input type="radio" id="married-no" name="married">
+                <label for="married-no" class="no"></label>
+                <input type="radio" id="married-no-need" name="married">
+                <label for="married-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Witness memo</td>
+            <td class="radio-group">
+                <input type="radio" id="wit-yes" name="wit">
+                <label for="wit-yes" class="yes"></label>
+                <input type="radio" id="wit-no" name="wit">
+                <label for="wit-no" class="no"></label>
+                <input type="radio" id="wit-no-need" name="wit">
+                <label for="wit-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>FIS</td>
+            <td class="radio-group">
+                <input type="radio" id="fas-yes" name="fas">
+                <label for="fas-yes" class="yes"></label>
+                <input type="radio" id="FIR-no" name="fas">
+                <label for="fas-no" class="no"></label>
+                <input type="radio" id="fas-no-need" name="fas">
+                <label for="fas-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>161</td>
+            <td class="radio-group">
+                <input type="radio" id="ONE-yes" name="ONE">
+                <label for="ONE-yes" class="yes"></label>
+                <input type="radio" id="ONE-no" name="ONE">
+                <label for="ONE-no" class="no"></label>
+                <input type="radio" id="ONE-no-need" name="ONE">
+                <label for="ONE-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>WOUND</td>
+            <td class="radio-group">
+                <input type="radio" id="WOUND-yes" name="WOUND">
+                <label for="WOUND-yes" class="yes"></label>
+                <input type="radio" id="WOUND-no" name="WOUND">
+                <label for="WOUND-no" class="no"></label>
+                <input type="radio" id="WOUND-no-need" name="WOUND">
+                <label for="WOUND-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>MVI..IV</td>
+            <td class="radio-group">
+                <input type="radio" id="MVD-yes" name="MVD">
+                <label for="MVD-yes" class="yes"></label>
+                <input type="radio" id="MVD-no" name="MVD">
+                <label for="MVD-no" class="no"></label>
+                <input type="radio" id="MVD-no-need" name="MVD">
+                <label for="MVD-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>MVI..TPV</td>
+            <td class="radio-group">
+                <input type="radio" id="TPV-yes" name="TPV">
+                <label for="TPV-yes" class="yes"></label>
+                <input type="radio" id="TPV-no" name="TPV">
+                <label for="TPV-no" class="no"></label>
+                <input type="radio" id="TPV-no-need" name="TPV">
+                <label for="TPV-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>Arrest Memo</td>
+            <td class="radio-group">
+                <input type="radio" id="MEMO-yes" name="MEMO">
+                <label for="MEMO-yes" class="yes"></label>
+                <input type="radio" id="WOUND-no" name="MEMO">
+                <label for="MEMO-no" class="no"></label>
+                <input type="radio" id="MEMO-no-need" name="MEMO">
+                <label for="MEMO-no-need" class="no-need"></label>
+            </td>
+        </tr>
+        <tr>
+            <td>IV..DL</td>
+            <td class="radio-group">
+                <input type="radio" id="IV-yes" name="IV">
+                <label for="IV-yes" class="yes"></label>
+                <input type="radio" id="IV-no" name="IV">
+                <label for="IV-no" class="no"></label>
+                <input type="radio" id="IV-no-need" name="IV">
+                <label for="IV-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>IV..RC</td>
+            <td class="radio-group">
+                <input type="radio" id="RC-yes" name="RC">
+                <label for="RC-yes" class="yes"></label>
+                <input type="radio" id="RC-no" name="RC">
+                <label for="RC-no" class="no"></label>
+                <input type="radio" id="RC-no-need" name="RC">
+                <label for="RC-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>IV..POLICY</td>
+            <td class="radio-group">
+                <input type="radio" id="IVV-yes" name="IVV">
+                <label for="IVV-yes" class="yes"></label>
+                <input type="radio" id="IVV-no" name="IVV">
+                <label for="IVV-no" class="no"></label>
+                <input type="radio" id="IVV-no-need" name="IVV">
+                <label for="IVV-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>TPV..DL</td>
+            <td class="radio-group">
+                <input type="radio" id="TPVV-yes" name="TPVV">
+                <label for="TPVV-yes" class="yes"></label>
+                <input type="radio" id="TPVV-no" name="TPVV">
+                <label for="TPVV-no" class="no"></label>
+                <input type="radio" id="TPVV-no-need" name="TPVV">
+                <label for="TPVV-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>TPV..RC</td>
+            <td class="radio-group">
+                <input type="radio" id="RCC-yes" name="RCC">
+                <label for="RCC-yes" class="yes"></label>
+                <input type="radio" id="RCC-no" name="RCC">
+                <label for="RCC-no" class="no"></label>
+                <input type="radio" id="RCC-no-need" name="RCC">
+                <label for="RCC-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>TPV..POLICY</td>
+            <td class="radio-group">
+                <input type="radio" id="TPP-yes" name="TPP">
+                <label for="TPP-yes" class="yes"></label>
+                <input type="radio" id="TPP-no" name="TPP">
+                <label for="TPP-no" class="no"></label>
+                <input type="radio" id="TPP-no-need" name="TPP">
+                <label for="TPP-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>PM REPORT</td>
+            <td class="radio-group">
+                <input type="radio" id="PM-yes" name="PM">
+                <label for="PM-yes" class="yes"></label>
+                <input type="radio" id="PM-no" name="PM">
+                <label for="PM-no" class="no"></label>
+                <input type="radio" id="PM-no-need" name="PM">
+                <label for="PM-no-need" class="no-need"></label>
+            </td>
+        </tr>
+         <tr>
+            <td>INQUEST</td>
+            <td class="radio-group">
+                <input type="radio" id="INQ-yes" name="INQ">
+                <label for="INQ-yes" class="yes"></label>
+                <input type="radio" id="INQ-no" name="INQ">
+                <label for="INQ-no" class="no"></label>
+                <input type="radio" id="INQ-no-need" name="INQ">
+                <label for="INQ-no-need" class="no-need"></label>
+            </td>
+        </tr>
+    </table>
+    <center><button type="submit" style="height: 35px; width:200px;"><b>SUBMIT</b></button></center>
+</body>
+</html>
